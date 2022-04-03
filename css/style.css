@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #0d1a2d;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card{
+    background-color: #15273d;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 10rem;
+    transition: .3s;
+}
+
+/* card hover effect */
+.card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0px 18px 35px 0px rgba(12, 23, 41, 0.116);
+    -webkit-box-shadow: 0px 18px 35px 0px rgba(12, 23, 41, 0.116);
+    -moz-box-shadow: 0px 18px 35px 0px rgba(12, 23, 41, 0.116);
+}
+/* card hover effect */
+
+.card .card_top{
+    height: 300px;
+    position: relative;
+}
+
+.card img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card .card_top .svg_container{
+    background-color: #00fdfd60;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    opacity: 0;
+    transition: .3s;
+}
+
+.card .card_top svg{
+    position: absolute;
+    align-items: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* hover on card image to display the view icon */
+.card_top:hover .svg_container{
+    opacity: 1;
+}
+/* hover on card image to display the view icon */
+
+article{
+    padding-bottom: 1.4rem;
+    margin-bottom: .7rem;
+    border-bottom: 1px solid #89add82a;
+    font-family: 'Rubik', sans-serif;
+}
+
+.card article h3{
+    color: rgb(233, 233, 233);
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: .05rem;
+    font-weight: 500;
+    margin-bottom: .8rem;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+/* h3 hover effevt */
+.card article h3:hover{
+    color: #00fdfb;
+}
+/* h3 hover effevt */
+
+.card article p{
+    color: #89add8;
+    line-height: 1.4;
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+.card .article_footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .article_footer .price div{
+    display: flex;
+}
+
+.card .article_footer .price .eth_tag{
+    margin-left: 8px;
+    line-height: 1.3;
+    color: #00fdfb;
+    font-size: .9rem;
+    text-transform: uppercase;
+    letter-spacing: .03rem;
+}
+
+.card .article_footer .days_left div{
+    display: flex;
+}
+
+.card .article_footer .days_left .days_tag{
+    line-height: 1.4;
+    color: #89add8;
+    font-size: .9rem;
+    margin-left: 8px;
+}
+
+.card footer{
+    display: flex;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+.card footer img{
+    width: 2.5rem;
+    border: .15rem solid rgba(255, 255, 255, 0.336);
+    border-radius: 50%;
+}
+
+.card footer span{
+    margin-left: .8rem;
+    color: #89add8;
+    font-size: .9rem;
+    word-spacing: .1rem;
+}
+
+.card footer span a{
+    text-decoration: none;
+    color: rgb(233, 233, 233);
+    transition: .3s;
+}
+
+/* card footer link hover effevt */
+.card footer span a:hover{
+    color: #00fdfb;
+}
+/* card footer link hover effevt */
